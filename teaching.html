@@ -25,7 +25,8 @@
 
 <!-- FONT
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<link href="https://fonts.googleapis.com/css?family=Oswald:400,300" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 
 <!-- CSS
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -40,10 +41,20 @@
 <!-- Google Analytics
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-	<script src="js/script.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-92029728-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 
 </head>
-<body id="body">
+<body>
+
 
 
 <!-- Primary Page Layout
@@ -56,12 +67,12 @@
 			<a id="banner-name-link" href="./index.html">Anthony Stanislavski</a> 
 		</h2>
 		<div id="nav-links">
-			<a class="page-links" href="#drums">Teaching</a>
-			<a class="page-links" href="#what-will-you-learn">Videos</a>
+			<a class="page-links" href="#drums">Drums</a>
 			<a class="page-links" href="#theory">Theory</a>
 			<a class="page-links" href="#testimonial-heading">Testimonials</a><br id="hidden-for-tablets">
-			<a class="page-links" href="#pricing">Pricing</a>
+			<a class="page-links" href="#transcriptions">Sheets</a>
 			<a class="page-links" href="#faq">FAQs</a>
+			<a class="page-links" href="#pricing">Pricing</a>
 			<a class="page-links" href="#subscribe">Subscribe</a>
 			
 		</div>
@@ -75,55 +86,32 @@
 	<div id="drums" class="section drums">
 		<div class="container">
 			<div class="row">
-				<div class="six columns shaded-box">
-					<h1 class="section-heading teaching-hero">Drum Lessons</h1>
+				<div class="seven columns">
+					<img class="section-img" src="./images/IMG_2751.jpg">
+				</div>
+				<div class="five columns">
+					<h1 class="section-heading">Drum Lessons</h1>
 					<h5 class="catchy-subtitle">Fast track your drumming today.</h5>
 					<p>Let Anthony show you how to be a creative drummer. You will find your musical voice, and learn to play rock solid time. He has a wealth of industry experience, both in the studio and on the stage.</p>
-					<a class="button button-primary myBtn" href="#">Book a drum session</a>
+					<a class="button button-primary" href="#contact">Book a drum session</a>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<!-- What will you learn -->
-
-	<div id="what-will-you-learn" class="section what-will-you-learn">
-		<div class="container">
-			<div class="row">
-				<div class="offset-by-six six columns shaded-box">
-					<h1 class="section-heading">What will you learn today?</h1>
-					<h5 class="catchy-subtitle">Checkout the latest free lessons</h5>
-					<div class="row">
-					<div class="offset-by-two eight columns">
-							<a class="main-btn-1" href="./downloads.html">Watch videos &raquo;</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- Modal content -->
-	
-	<div id="myModal" class="modal">
-		<div class="modal-content">
-			<span class="close">&times;</span>
-			<p>Loading form. Practice a paradiddle while you wait...</p>
-			<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe5ip26Glke3cwivd2XpWFWn68GJnpyI94-CIw_bGHQOS64hA/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-
-		</div>
-	</div>
-	
 	<!-- Theory -->
 
 	<div id="theory" class="section theory">
 		<div class="container">
 			<div class="row">
-				<div class="offset-by-three six columns">
+				<div class="six columns">
 					<h1 class="section-heading">Theory Lessons</h1>
 					<h5 class="catchy-subtitle">Enabling students to overcome barriers</h5>
 					<p>Unlock the secrets to music theory, understand scales, and improve your musicianship. Find out how Anthony can help you pass your exams with flying colours.</p>
-					<a class="button button-primary myBtn" href="#theory">Book a theory session</a>
+					<a class="button button-primary" href="#contact">Book a theory session</a>
+				</div>
+				<div class="six columns">
+					<img class="section-img" src="./images/IMG_4064 copy.jpg">
 				</div>
 			</div>
 		</div>
@@ -154,6 +142,50 @@
 		</div>
 	</div>
 
+	<!-- transcriptions -->
+
+	<div id="transcriptions" class="section transcriptions">
+		<div class="container">
+			<div class="row">
+				<div class="six columns">
+					<img class="section-img" src="./images/anthony-stanislavski-032-cropped.jpg">
+				</div>
+				<div class="six columns">
+					<h1 class="section-heading">Drum Lesson PDFs</h1>
+					<h5 class="catchy-subtitle">Download some of Anthony's free sheetmusic</h5>
+					<p>Want to see what Anthony's been working on? Download PDF files and start playing now.</p>
+					<a class="button button-primary" href="./downloads.html">Free PDFs</a>
+					<a class="button button-primary" href="./premium_cat.html">Premium Catalogue</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- FAQ -->
+
+	<div id="faq" class="section faq">
+		<div class="container">
+			<div class="row">
+			<div class="offset-by-two column eight columns">
+				<h1 class="section-heading">Frequently Asked Questions</h1>
+				<h5 class="question">Can I bring a song for us to learn?</h5>
+				<p class="answer">Absolutely, I encourage it. Not only is it good to play something you like listening to, it gives us a framework to put some new skills and ideas into action.</p>
+
+				<h5 class="question">Can I pay for a block of lessons?</h5>
+				<p class="answer">For sure. You can purchase lessons in blocks of 5 or more. It's a great way to keep focused and committed.</p>
+
+				<h5 class="question">I'm not sure if I want to commit to purchasing a block of lessons, do you offer one-off sessions?</h5>
+				<p class="answer">I sure do! I understand that you might want to find out if my teaching style suits you, so a one-off lesson would be perfect. For these lessons, I charge $5 on top of the block lesson rate.</p>
+
+				<h5 class="question">Do I have to come to you or can you travel to my house?</h5>
+				<p class="answer">Either. You can have lessons at my home studio, or for an extra charge I can come to you.</p>
+
+				<h5 class="question">Was that you on the telly playing the marching drum for the opening ceremony of the 2015 ANZAC day game at the MCG? </h5>
+				<p class="answer">Yes!</p>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!-- Pricing -->
 
@@ -161,6 +193,7 @@
 		<div class="container">
 			<div class="price-title">
 				<h1 class="section-heading">Block Lesson Pricing</h1>
+				<!-- <h5 class="catchy-subtitle">block lesson rates:</h5> -->
 			</div>
 			<div class="row group-of-prices">
 				<div class="one-third column pricing-box">
@@ -180,57 +213,51 @@
 					<p>This premium lesson plan is perfect for audition preparation, theory lessons, or for those on an irregular timetable</p>
 				</div>
 			</div>
-		</div>
-	</div>
-
-	<!-- FAQ -->
-
-	<div id="faq" class="section faq">
-		<div class="container">
-			<div class="row">
-				<div class="offset-by-two column eight columns">
-					<h1 class="section-heading">Frequently Asked Questions</h1>
-					<h5 class="question">Can I bring a song for us to learn?</h5>
-					<p class="answer">Absolutely, I encourage it. Not only is it good to play something you like listening to, it gives us a framework to put some new skills and ideas into action.</p>
-
-					<h5 class="question">Can I pay for a block of lessons?</h5>
-					<p class="answer">For sure. You can purchase lessons in blocks of 5 or more. It's a great way to keep focused and committed.</p>
-
-					<h5 class="question">I'm not sure if I want to commit to purchasing a block of lessons, do you offer one-off sessions?</h5>
-					<p class="answer">I sure do! I understand that you might want to find out if my teaching style suits you, so a one-off lesson would be perfect. For these lessons, I charge $5 on top of the block lesson rate.</p>
-
-					<h5 class="question">Do I have to come to you or can you travel to my house?</h5>
-					<p class="answer">Either. You can have lessons at my home studio, or for an extra charge I can come to you.</p>
-
-					<h5 class="question">Was that you on the telly playing the marching drum for the opening ceremony of the 2015 ANZAC day game at the MCG? </h5>
-					<p class="answer">Yes!</p>
+			
+			<!--
+			<div class="row group-of-prices-small">
+				<div class="one-third column pricing-box-small">
+					<h5 class="mini-price">$45</h5>
+					<p>30min - pay per lesson</p>
 				</div>
+				<div class="one-third column pricing-box-small">
+					<h5 class="mini-price">$60</h5>
+					<p>45min - pay per lesson</p>
+				</div>
+				<div class="one-third column pricing-box-small">
+					<h5 class="mini-price">$75</h5>
+					<p>60min - pay per lesson</p>
+				</div>
+				-->
+
 			</div>
 		</div>
 	</div>
 
+	<!-- Subscribe -->
 
-	
 	<!-- Begin MailChimp Signup Form -->
-	
-	<div id="subscribe"></div> <!-- Subscribe: used for nav bar link-->
-	<div id="mc_embed_signup">
-			<form action="//stanislavskimusic.us15.list-manage.com/subscribe/post?u=9ea488c9cb322b57d0f88d600&amp;id=0d86e7afa8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-				<div id="mc_embed_signup_scroll">
-					<div class="container">
-						<div class="row">
-							<label id="signup-subtitle" for="mce-EMAIL">Subscribe to our mailing list to stay up to date with new lesson videos</label>
-							<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-							<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-							<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9ea488c9cb322b57d0f88d600_0d86e7afa8" tabindex="-1" value=""></div>
-							<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button button-primary"></div>
-						</div>
-					</div>
-				</div>
-			</form>
-	</div>
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="//stanislavskimusic.us15.list-manage.com/subscribe/post?u=9ea488c9cb322b57d0f88d600&amp;id=0d86e7afa8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<div class="container">
+			<div class="row">
+	<label for="mce-EMAIL" >SUBSCIBE TO OUR MAILING LIST TO STAY UP TO DATE WITH NEW LESSONS</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9ea488c9cb322b57d0f88d600_0d86e7afa8" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button button-primary"></div>
+    </div>
+</form>
+</div>
 
-	<!--End mc_embed_signup-->
+<!--End mc_embed_signup-->
 
 	<!-- Contact -->
 
@@ -254,13 +281,13 @@
 	<div id="footer" class="section">
 		<div class="container">
 			<div class="row">
-				<img class="drumicon" src="./images/logo_white_png.png" alt="Stanislavski Music logo">
+				<img class="drumicon" src="./images/logo_white_png.png">
 				<p>Find out more here</p>
 				<div>
-					<a rel="nofollow" target="_blank" href="https://www.youtube.com/channel/UCTHWizNRbpkStedrF_l6yMQ" title="Anthony Stanislavski Youtube"><img alt="youtube icon" class="social-media-icons" src="./images/iconyoutube.png"></a>
-					<a rel="nofollow" target="_blank" href="https://soundcloud.com/stanleyknife-1" title="Anthony Stanislavski SoundCloud"><img alt="Sound Cloud Icon" class="social-media-icons" src="./images/iconsoundcloud.png"></a>
-					<a rel="nofollow" target="_blank" href="https://www.facebook.com/stanislavskimusic/" title="Anthony Stanislavski Facebook"><img alt="facebook icon" class="social-media-icons" src="./images/iconfacebook.png"></a>
-					<a rel="nofollow" target="_blank" href="https://www.instagram.com/luvskidrums/" title="Anthony Stanislavski Instagram"><img alt="instagram icon" class="social-media-icons" src="./images/iconInstagram.png"></a>
+					<a target="_blank" href="https://www.youtube.com/channel/UCTHWizNRbpkStedrF_l6yMQ" title="Anthony Stanislavski Youtube"><img alt="youtube icon" class="social-media-icons" src="./images/iconyoutube.png"></a>
+					<a target="_blank" href="https://soundcloud.com/stanleyknife-1" title="Anthony Stanislavski SoundCloud"><img alt="Sound Cloud Icon" class="social-media-icons" src="./images/iconsoundcloud.png"></a>
+					<a target="_blank" href="https://www.facebook.com/stanislavskimusic/" title="Anthony Stanislavski Facebook"><img alt="facebook icon" class="social-media-icons" src="./images/iconfacebook.png"></a>
+					<a target="_blank" href="https://www.instagram.com/luvskidrums/" title="Anthony Stanislavski Instagram"><img alt="instagram icon" class="social-media-icons" src="./images/iconInstagram.png"></a>
 				</div>
 				<br>
 				<p>&copy; Anthony Stanislavski
@@ -274,8 +301,19 @@
 
 <!-- End Document
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<script src="js/modal.js"></script>
+
+	<!-- <script type="text/javascript">
+		function moveMe() {
+			var button = document.getElementById('move-me-pic');
+			var x = window.screenX;
+			var y = window.screenY;
+			console.log('value of x is: ' + x);
+			console.log('value of y is: ' + y);
+			button.style.position = 'fixed';
+			button.style.left = y + 'px';
+			button.style.top = x + 'px';
+		}
+	</script> 
+	<p id="move-me-pic" class="button button-primary" onmousedown="moveMe()">click me and see me move!</p>-->
 </body>
 </html>
-
-

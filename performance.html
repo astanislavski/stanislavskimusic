@@ -26,7 +26,8 @@
 
 <!-- FONT
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<link href="https://fonts.googleapis.com/css?family=Oswald:200,300" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 
 <!-- CSS
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -38,15 +39,58 @@
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<link rel="icon" type="image/png" href="images/drumicon.png">
 
+	<!-- script -->
+	<script>
+
+		/* Light YouTube Embeds by @labnol */
+		/* Web: http://labnol.org/?p=27941 */
+
+		document.addEventListener("DOMContentLoaded",
+			function() {
+				var div, n,
+				v = document.getElementsByClassName("youtube-player");
+				for (n = 0; n < v.length; n++) {
+					div = document.createElement("div");
+					div.setAttribute("data-id", v[n].dataset.id);
+					div.innerHTML = labnolThumb(v[n].dataset.id);
+					div.onclick = labnolIframe;
+					v[n].appendChild(div);
+				}
+			});
+
+		function labnolThumb(id) {
+			var thumb = '<img src="https://i.ytimg.com/vi/ID/hqdefault.jpg">',
+			play = '<div class="play"></div>';
+			return thumb.replace("ID", id) + play;
+		}
+
+		function labnolIframe() {
+			var iframe = document.createElement("iframe");
+			var embed = "https://www.youtube.com/embed/ID?autoplay=1";
+			iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
+			iframe.setAttribute("frameborder", "0");
+			iframe.setAttribute("allowfullscreen", "1");
+			this.parentNode.replaceChild(iframe, this);
+		}
+
+	</script>
 
 <!-- Google Analytics
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<!-- Javascript -->
-	<script src="js/script.js"></script>
 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-92029728-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 
 </head>
-<body id="body">
+<body>
 
 <!-- Primary Page Layout
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -75,11 +119,11 @@
 	<div id="collaboration" class="section collaboration">
 		<div class="container">
 			<div class="row">
-				<div class="offset-by-two eight columns collaboration-text">
+				<div class="offset-by-three six columns collaboration-text">
 					<h1 class="section-heading">Collaboration</h1>
 					<h5 class="catchy-subtitle">Ask Anthony to be part of your project</h5>
-					<h6 class="work-together-content">From Irish pubs to jazz clubs, from the studio to the stadium, Anthony is a world class drummer with years of professional experience. So far, 2017 has been a busy year and he is keen to continue working and contributing to Australia's music scene. Get in touch and see how you could work together.</p>
-					<a class="button button-primary myBtn" href="#">Contact</a>
+					<p>From Irish pubs to jazz clubs, from the studio to the stadium, Anthony is a world class drummer with years of professional experience. After a busy 2016, he is keen to continue working and contributing to Australia's music scene. Get in touch and see how you could work together.</p>
+					<a class="button button-primary" href="#contact">Contact</a>
 				</div>
 			</div>
 		</div>
@@ -96,10 +140,12 @@
 			<div class="videorow">
 				<div class="six columns">
 					<div class="videoWrapper youtube-player" data-id="wFo1yrbIkxo">
+						<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/wFo1yrbIkxo" frameborder="0" allowfullscreen></iframe> -->
 					</div>
 				</div>
 				<div class="six columns">
 					<div class="videoWrapper youtube-player" data-id="7k1NwVGHpC0">
+						<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/7k1NwVGHpC0" frameborder="0" allowfullscreen></iframe> -->
 					</div>
 				</div>
 			</div>
@@ -109,10 +155,12 @@
 			<div class="videorow">
 				<div class="six columns">
 					<div class="videoWrapper youtube-player" data-id="YF1eaj_trbU">
+						<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/YF1eaj_trbU" frameborder="0" allowfullscreen></iframe> -->
 					</div>
 				</div>
 				<div class="six columns">
 					<div class="videoWrapper youtube-player" data-id="KJyrFAKAJ34">
+						<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/KJyrFAKAJ34" frameborder="0" allowfullscreen></iframe> -->
 					</div>
 				</div>
 			</div>
@@ -155,33 +203,39 @@
 					<h1 class="section-heading">Projects</h1>
 					<h5 class="catchy-subtitle">Current and future musical ventures</h5>
 					<div id="projects-links">
-						<a rel="nofollow" class="band-links" target="_blank" href="https://www.facebook.com/stellarcoverband/">Stellar</a>	
-						<a rel="nofollow" class="band-links" target="_blank" href="https://www.facebook.com/letterstoyoubookings/">Letters to you</a>	
-						<a rel="nofollow" class="band-links" target="_blank" href="https://www.facebook.com/whiskygypsies/">Whisky Gypsies</a>	
-						<a rel="nofollow" class="band-links" target="_blank" href="https://www.facebook.com/combocomboband/">Combo Combo</a>	
-						<a rel="nofollow" class="band-links" target="_blank" href="https://www.facebook.com/AustralianArmyBand/">Australian Army Band</a>
+						<a class="band-links" target="_blank" href="https://www.facebook.com/stellarcoverband/">Stellar</a>	
+						<a class="band-links" target="_blank" href="https://www.facebook.com/letterstoyoubookings/">Letters to you</a>	
+						<a class="band-links" target="_blank" href="https://www.facebook.com/whiskygypsies/">Whisky Gypsies</a>	
+						<a class="band-links" target="_blank" href="https://www.facebook.com/combocomboband/">Combo Combo</a>	
+						<a class="band-links" target="_blank" href="https://www.facebook.com/AustralianArmyBand/">Australian Army Band</a>
 					</div>
+					
+					<!-- <p>Stella</p>
+					<p>Stockwell/Stanislavski Quartet</p>
+					<p>Army Band</p>
+					<p>Tom Allen Grahem Trio</p>
+					<p>Band #5</p> -->
 				</div>
 				<div class="six columns">
-					<img class="section-img" src="./images/anthony-stanislavski-005.jpg" alt="Picture of Anthony in blue shirt working on drumming exercises">
+					<img class="section-img" src="./images/anthony-stanislavski-005.jpg">
 				</div>
 			</div>
 		</div>
 	</div>
-
 
 	<!-- transcriptions -->
 
 	<div id="transcriptions" class="section transcriptions">
 		<div class="container">
 			<div class="row">
-				<div class="offset-by-three six columns">
+				<div class="six columns">
+					<img class="section-img" src="./images/IMG_4062.jpg">
+				</div>
+				<div class="six columns">
 					<h1 class="section-heading">Transcriptions</h1>
-					<h5 class="catchy-subtitle"><a class="myBtn" href="#transcriptions">Request</a> a custom made chart</h5>
-					<p class="testimonial">"...two hours later, I get an email saying it's done. This was no ordinary drum transcription, the song was by the Architects and was a very technical song. I was left speechless. The chart was very readable and accurate, I am inspired by how quickly he did it - I never thought that it was possible. I would recommend Anthony to anyone as he is an amazing drummer and really awesome at his craft. A nice guy as well..."</p>
-					<p class="testimonial">- Matt Mallardi</p>
-					
-					<a class="button button-primary " href="transcriptions.html">Check out Free content</a>
+					<h5 class="catchy-subtitle">Request a custom made chart</h5>
+					<p>Need a piece of music transcribed? Want to know how to play your favourite tune? Email Anthony and tell him your favourite song and he will send you a digital transcription that you can work on today.</p>
+					<a class="button button-primary" href="#contact">Get in Touch</a>
 				</div>
 			</div>
 		</div>
@@ -198,6 +252,7 @@
 			</div>
 			<div class="row">
 				<div class="six columns">
+					<!-- <p class="contact-details">Facebook</p> -->
 					<p class="contact-details">Mobile: 0414 184 510</p>
 					<p class="contact-details">Email: stanislavskimusic@gmail.com</p>
 				</div>
@@ -210,13 +265,13 @@
 	<div id="footer" class="section">
 		<div class="container">
 			<div class="row">
-				<img class="drumicon" src="./images/logo_white_png.png" alt="Stanislavski Music logo">
+				<img class="drumicon" src="./images/logo_white_png.png">
 				<p>Find out more here</p>
 				<div>
-					<a rel="nofollow" target="_blank" href="https://www.youtube.com/channel/UCTHWizNRbpkStedrF_l6yMQ" title="Anthony Stanislavski Youtube"><img alt="youtube icon" class="social-media-icons" src="./images/iconyoutube.png"></a>
-					<a rel="nofollow" target="_blank" href="https://soundcloud.com/stanleyknife-1" title="Anthony Stanislavski SoundCloud"><img alt="Sound Cloud Icon" class="social-media-icons" src="./images/iconsoundcloud.png"></a>
-					<a rel="nofollow" target="_blank" href="https://www.facebook.com/stanislavskimusic/" title="Anthony Stanislavski Facebook"><img alt="facebook icon" class="social-media-icons" src="./images/iconfacebook.png"></a>
-					<a rel="nofollow" target="_blank" href="https://www.instagram.com/luvskidrums/" title="Anthony Stanislavski Instagram"><img alt="instagram icon" class="social-media-icons" src="./images/iconInstagram.png"></a>
+					<a target="_blank" href="https://www.youtube.com/channel/UCTHWizNRbpkStedrF_l6yMQ" title="Anthony Stanislavski Youtube"><img alt="youtube icon" class="social-media-icons" src="./images/iconyoutube.png"></a>
+					<a target="_blank" href="https://soundcloud.com/stanleyknife-1" title="Anthony Stanislavski SoundCloud"><img alt="Sound Cloud Icon" class="social-media-icons" src="./images/iconsoundcloud.png"></a>
+					<a target="_blank" href="https://www.facebook.com/stanislavskimusic/" title="Anthony Stanislavski Facebook"><img alt="facebook icon" class="social-media-icons" src="./images/iconfacebook.png"></a>
+					<a target="_blank" href="https://www.instagram.com/luvskidrums/" title="Anthony Stanislavski Instagram"><img alt="instagram icon" class="social-media-icons" src="./images/iconInstagram.png"></a>
 				</div>
 				<br>
 				<p>&copy; Anthony Stanislavski
@@ -228,20 +283,7 @@
 		</div>
 	</div>
 
-	<!-- Modal content -->
-	<div id="myModal" class="modal">
-		<div class="modal-content">
-			<span class="close">&times;</span>
-			<!-- <p>Loading form. Practice a paradiddle while you wait...</p> -->
-			<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdSnrv2uVL1hobPRXvRwtJq5xrsQ7hEcIctOAF9tjhgLTeStw/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-
-		</div>
-	</div>
-
 <!-- End Document
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<script src="js/modal.js"></script>
 </body>
 </html>
-
-
