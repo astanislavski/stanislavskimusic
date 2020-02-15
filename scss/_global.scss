@@ -6,8 +6,41 @@ html {
     color: $charcoal;
     font-family: 'Rubik', sans-serif;
 
+    // utility classes
+
     .width-fifty-percent {
       width: 50%;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .flex-container {
+      @media (min-width: $flex-content-width) {
+        display: flex;
+        text-align: left;
+
+        .flex-basis-forty-percent {
+          flex-shrink: 0;
+          flex-basis: 40%;
+        }
+
+        .flex-basis-fifty-percent {
+          flex-shrink: 0;
+          flex-basis: 50%;
+        }
+
+        &.reverse-flex {
+          flex-direction: row-reverse;
+        }
+      }
+
+      text-align: center;
+    }
+
+    img {
+      max-width: 100%;
     }
 
     h2 {
@@ -18,8 +51,13 @@ html {
       }
     }
 
-    p {
-      @media (min-width: $desktop-small) {
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul, p {
+      @media (min-width: $tablet) {
         font-size: 1.3em;
       }
     }
@@ -33,18 +71,22 @@ html {
       }
     }
 
-    .flex-container {
-      @media (min-width: $desktop-small) {
-        display: flex;
-      }
-    }
-
     .panel {
       min-height: 450px;
       padding: 12px;
 
       @media (min-width: $tablet) {
         padding: 60px 24px;
+      }
+
+      &.blue-bg {
+        background-color: $blue;
+        color: white;
+      }
+
+      &.black-bg {
+        color: white;
+        background: black;
       }
     }
 

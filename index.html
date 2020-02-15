@@ -52,42 +52,69 @@
         </h1>
         <a class="cta-button" href="#contact">Contact</a>
         <div>
-          <a rel="nofollow" target="_blank" href="https://www.facebook.com/stanislavskimusic/" title="Anthony Stanislavski Facebook"><img alt="facebook icon" class="social-media-icons" src="./images/iconfacebook.png"></a>
-          <a rel="nofollow" target="_blank" href="https://www.instagram.com/luvskidrums/" title="Anthony Stanislavski Instagram"><img alt="instagram icon" class="social-media-icons" src="./images/iconInstagram.png"></a>
-          <a rel="nofollow" target="_blank" href="https://www.youtube.com/channel/UCTHWizNRbpkStedrF_l6yMQ" title="Anthony Stanislavski Youtube"><img alt="youtube icon" class="social-media-icons" src="./images/iconyoutube.png"></a>
+          <div class="social-media-icons">
+            <a rel="nofollow" target="_blank" href="https://www.instagram.com/luvskidrums/" title="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" aria-label="Instagram" role="img" viewBox="0 0 512 512">
+                <rect width="512" height="512" rx="15%" fill="#fff"/>
+                <g fill="none" stroke="#06486d" stroke-width="29">
+                  <rect height="296" rx="78" width="296" x="108" y="108"/>
+                  <circle cx="256" cy="256" r="69"/>
+                </g>
+                <circle cx="343" cy="169" fill="#fff" r="19"/>
+              </svg>
+            </a>
+          </div>
+
+          <div class="social-media-icons">
+            <a rel="nofollow" target="_blank" href="https://www.facebook.com/stanislavskimusic/" title="Anthony Stanislavski Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" aria-label="Facebook" role="img" viewBox="0 0 512 512">
+                <rect width="512" height="512" rx="15%" fill="#fff"/>
+                <path d="M355.6 330l11.4-74h-71v-48c0-20.2 9.9-40 41.7-40H370v-63s-29.3-5-57.3-5c-58.5 0-96.7 35.4-96.7 99.6V256h-65v74h65v182h80V330h59.6z" fill="#06486d"/>
+              </svg>
+            </a>
+          </div>
+
+          <div class="social-media-icons">
+            <a rel="nofollow" target="_blank" href="https://www.youtube.com/channel/UCTHWizNRbpkStedrF_l6yMQ" title="Anthony Stanislavski Youtube">
+              <svg xmlns="http://www.w3.org/2000/svg" aria-label="YouTube" role="img" viewBox="0 0 512 512" fill="#fff">
+                <rect width="512" height="512" rx="15%"/>
+                <path d="m427 169c-4-15-17-27-32-31-34-9-239-10-278 0-15 4-28 16-32 31-9 38-10 135 0 174 4 15 17 27 32 31 36 10 241 10 278 0 15-4 28-16 32-31 9-36 9-137 0-174" fill="#06486d"/>
+                <path d="m220 203v106l93-53"/>
+              </svg>
+            </a>
+          </div>
+
         </div>
       </div>
     </div>
   </div>
 
-  <div class="panel included">
-    <div class="flex-container max-width-container">
-      <div class="list-wrapper">
+  <div class="panel">
+    <div class="flex-container reverse-flex max-width-container">
+      <div class="flex-basis-forty-percent">
         <h2>Out now!</h2>
         <p>This is the description of the book!</p>
         <a href="https://beginnersguidetobigbanddrumming.com/" target="_blank" class="cta-button">Get it here</a>
       </div>
       <div>
-        <img class="figure-image" src="./images/covers.png">
+        <img src="./images/covers.png">
       </div>
     </div>
   </div>
 
-  <div class="panel video">
+  <div class="panel">
     <div class="max-width-container flex-container">
-      <div class="video-text-wrapper">
-        <div class="video-text">
-          <h2>About</h2>
-          <p>
-          Anthony is a Melbourne drummer who loves making music, he regularly performs in rock, jazz, funk, and Irish bands.
+      <div class="about-description flex-basis-fifty-percent">
+        <h2>About</h2>
+        <p>
+        Anthony is a Melbourne drummer who loves making music, he regularly performs in rock, jazz, funk, and Irish bands.
 
 He has recorded and played with many artists including with Leigh Kernaghan in front of 90,000 people and 5 million television viewers. His professional work has taken him overseas, and right around the country. Some career highlights include the Melbourne Grand Prix performances in 2015 and 2016, live halftime entertainment at the ANZAC day AFL match, and the 'Army in Concert tour' with Guy Sebastian and Marina Prior.
 
 Anthony has been a professional musician in the Australian Army Band since 2002 and completed a Bachelor of Music Performance in 2013. He currently teaches at many colleges in Melbourne, directing junior and senior percussion ensembles as well as providing individual tuition for Drum Kit and Keyboard percussion.
 
-In between concerts and tours, you can regularly find Anthony at the Paris Cat Jazz Club, and other Melbourne music venues. 
-          </p>
-        </div>
+In between concerts and tours, you can regularly find Anthony at the Paris Cat Jazz Club, and other Melbourne music venues.
+        </p>
       </div>
       <div class="video-wrapper">
         <div class="youtube-player">
@@ -97,11 +124,8 @@ In between concerts and tours, you can regularly find Anthony at the Paris Cat J
     </div>
   </div>
 
-  <div class="panel sample short-notes">
-    <div class="max-width-container flex-container">
-      <div>
-        <img class="sample-image" src="./images/IMG_2751.JPG" >
-      </div>
+  <div class="panel black-bg">
+    <div class="max-width-container flex-container reverse-flex">
       <div class="audio-panel-wrapper">
         <h2>What do you want to learn?</h2>
         <ul>
@@ -111,10 +135,13 @@ In between concerts and tours, you can regularly find Anthony at the Paris Cat J
           <li>Custom transcriptions</li>
         </ul>
       </div>
+      <div>
+        <img class="sample-image" src="./images/IMG_2751.JPG" >
+      </div>
     </div>
   </div>
 
-  <div class="panel carousel">
+  <div class="panel blue-bg carousel">
     <div class="flex-container max-width-container">
       <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -165,20 +192,28 @@ In between concerts and tours, you can regularly find Anthony at the Paris Cat J
     </div>
   </div>
 
-  <div class="footer">
+  <div class="panel" id="contact">
+    <div class="text-center">
+      <h2>Contact</h2>
+      <p>email: </p>
+      <p>phone: </p>
+    </div>
+  </div>
+
+  <div class="footer text-center">
     <div class="max-width-container">
-      <img src="images/logo_white_png.png" >
+      <img src="images/logo_white_png.png" class="white-logo">
       <div>
-        <a rel="nofollow" target="_blank" href="https://www.facebook.com/stanislavskimusic/" title="Anthony Stanislavski Facebook"><img alt="facebook icon" class="social-media-icons" src="./images/iconfacebook.png"></a>
-        <a rel="nofollow" target="_blank" href="https://www.instagram.com/luvskidrums/" title="Anthony Stanislavski Instagram"><img alt="instagram icon" class="social-media-icons" src="./images/iconInstagram.png"></a>
-        <a rel="nofollow" target="_blank" href="https://www.youtube.com/channel/UCTHWizNRbpkStedrF_l6yMQ" title="Anthony Stanislavski Youtube"><img alt="youtube icon" class="social-media-icons" src="./images/iconyoutube.png"></a>
-        <a rel="nofollow" target="_blank" href="https://soundcloud.com/stanleyknife-1" title="Anthony Stanislavski SoundCloud"><img alt="Sound Cloud Icon" class="social-media-icons" src="./images/iconsoundcloud.png"></a>
+        <a rel="nofollow" target="_blank" href="https://www.facebook.com/stanislavskimusic/" title="Anthony Stanislavski Facebook"><img alt="facebook icon" class="footer-icons" src="./images/iconfacebook.png"></a>
+        <a rel="nofollow" target="_blank" href="https://www.instagram.com/luvskidrums/" title="Anthony Stanislavski Instagram"><img alt="instagram icon" class="footer-icons" src="./images/iconInstagram.png"></a>
+        <a rel="nofollow" target="_blank" href="https://www.youtube.com/channel/UCTHWizNRbpkStedrF_l6yMQ" title="Anthony Stanislavski Youtube"><img alt="youtube icon" class="footer-icons" src="./images/iconyoutube.png"></a>
       </div>
       <br>
-      <p>&copy; Anthony Stanislavski
-        <script>document.write(new Date().getFullYear());</script>
+      <p>
+        &copy; Anthony Stanislavski <script>document.write(new Date().getFullYear());</script>
         <br>
-        <br>Site by Patrick Stockwell
+        <br>
+        Site by Patrick Stockwell
       </p>
     </div>
   </div>

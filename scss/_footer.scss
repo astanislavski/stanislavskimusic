@@ -5,15 +5,19 @@
   padding: 24px;
   box-sizing: border-box;
 
-  img {
+  .footer-icons {
     margin: 0 8px;
     height: 48px;
     width: 48px;
     opacity: 1.0;
     transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 0.3;
+    }
   }
 
-  img:hover {
-    opacity: 0.3;
+  .white-logo {
+    max-width: 200px;
   }
 }
