@@ -1,0 +1,20 @@
+.about-author {
+  .author-image {
+    width: 100%;
+  }
+
+  .author-image-wrapper {
+    flex-basis: 45%;
+    @media (min-width: $desktop-small) {
+      margin-top: 132px;
+    }
+  }
+
+  .author-text {
+    flex-basis: 50%;
+  }
+
+  .flex-container {
+    justify-content: space-between;
+  }
+}

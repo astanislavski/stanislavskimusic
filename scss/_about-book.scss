@@ -1,0 +1,24 @@
+.about-book {
+  background-color: $mauve;
+
+  .book-text {
+    flex-basis: 50%;
+    text-align: center;
+
+    @media (min-width: $desktop-small) {
+      text-align: left;
+    }
+  }
+
+  .open-book-image {
+    width: 100%;
+  }
+
+  .open-book-image-wrapper {
+    flex-basis: 50%;
+  }
+
+  .cta-button {
+    background-color: $orange;
+  }
+}

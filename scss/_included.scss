@@ -1,0 +1,21 @@
+.included {
+  li {
+    margin: 12px 0;
+
+    @media (min-width: $desktop-small) {
+      font-size: 1.3em;
+    }
+  }
+
+  .list-wrapper {
+    order: 1;
+
+    @media (min-width: $desktop-large) {
+      flex-basis: 50%;
+    }
+  }
+
+  .figure-image {
+    width: 100%;
+  }
+}

@@ -1,0 +1,26 @@
+.digital-download {
+  .flex-container {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+
+    @media (min-width: $tablet) {
+      flex-direction: row;
+      text-align: left;
+    }
+
+    .card-image-wrapper {
+      flex-basis: 45%;
+      padding: 16px;
+
+      .card-image {
+        width: 100%;
+      }
+    }
+
+    .download-wrapper {
+      flex-basis: 45%;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.sample {
+  background-color: $charcoal;
+  color: white;
+
+  img {
+    width: 100%;
+  }
+
+  audio {
+    margin: 40px 0;
+  }
+
+  .audio-panel-wrapper {
+    text-align: center;
+
+    @media (min-width: $desktop-large) {
+      text-align: left;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+html {
+
+  body {
+    margin: 0;
+    background-color: white;
+    color: $charcoal;
+    font-family: 'Rubik', sans-serif;
+
+    h2 {
+      font-size: 3em;
+
+      @media (min-width: $desktop-large) {
+        font-size: 4em;
+      }
+    }
+
+    p {
+      @media (min-width: $desktop-small) {
+        font-size: 1.3em;
+      }
+    }
+
+    .max-width-container {
+      margin: 0 auto;
+      max-width: $desktop-small;
+
+      @media (min-width: $desktop-large) {
+        max-width: $desktop-large;
+      }
+    }
+
+    .flex-container {
+      @media (min-width: $desktop-small) {
+        display: flex;
+      }
+    }
+
+    .panel {
+      min-height: 450px;
+      padding: 12px;
+
+      @media (min-width: $tablet) {
+        padding: 60px 24px;
+      }
+    }
+
+    .cta-button {
+      display: inline-block;
+      text-decoration: none;
+      border-radius: 5px;
+      padding: 20px;
+      background-color: $blue;
+      color: white;
+      font-size: 2em;
+      margin: 12px auto;
+    }
+
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "bigband-drumming-book",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:astanislavski/The-Beginner-s-Guide-to-Big-Band-Drumming.git",
+  "author": "Patrick Stockwell <stockwellpatrick@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build-css": "node-sass --include-path scss scss/main.scss css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "dependencies": {
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.18.10"
+  }
+}
