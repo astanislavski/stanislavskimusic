@@ -356,6 +356,9 @@ html body {
     @media (min-width: 750px) {
       html body .panel {
         padding: 60px 24px; } }
+    html body .panel.light-blue-bg {
+      background-color: #60C6CB;
+      color: #262626; }
     html body .panel.blue-bg {
       background-color: #06486d;
       color: white; }
