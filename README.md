@@ -1,4 +1,4 @@
-# The website for the book 'The Beginner's Guide to Big Band Drumming'
+# The website for Anthony Stanislavski
 
 ## Development
 
