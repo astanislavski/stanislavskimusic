@@ -31,6 +31,10 @@ html {
           flex-basis: 50%;
         }
 
+        &.column-flex {
+          flex-direction: column;
+        }
+
         &.reverse-flex {
           flex-direction: row-reverse;
         }
